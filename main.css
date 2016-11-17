@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #E8F4FF;
+}
+.wrapper {
+	max-width: 768px;
+	margin: 50px auto 0 auto;
+  positin: relative;
+}
+ul {
+	list-style: none;
+}
+/* ADDING FORM */
+form {
+	margin-top: 25px;
+	background-color: #3F51B5;
+	padding: 20px;
+	width: 100%;
+}
+.employee-name-input {
+	border: none;
+	color: #303F9F;
+  font-weight: bold;
+	height: 20px;
+	padding: 10px;
+	outline: none;
+	width: 77%;
+}
+.employee-name-input:focus, .employee-list li:hover {
+	background-color: #FFF9C4;
+}
+.add-employee-btn {
+	background-color: #FFC107;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	height: 40px;
+	outline: none;
+	text-transform: uppercase;
+	transition: 0.3s;
+	width: 20%;
+}
+	.add-employee-btn:hover {
+		background-color: #FFA000;
+	}
+/* EMPLOYEE LIST */
+.employee-list {
+	background-color: #3F51B5;
+	padding: 10px 20px;
+	width: 100%;
+}
+.employee-list li {
+	background-color: #FFF;
+	color: #727272;
+	margin-bottom: 2px;
+	padding: 10px 0 10px 10px;
+	position: relative;
+	width: 98.2%;
+}
+	.employee-list li:hover .remove {
+		display: block;
+	}
+.remove {
+	background-color: #fff;
+	border: none;
+	color: #D32F2F;
+	cursor: pointer;
+	display: none;
+  font-size: 20px;
+	top: 10px;
+	right: 20px;
+	position: absolute;
+}
+.remove:hover {
+	color: #212121;
+}
+/* ERROR MESSAGE*/
+#message {
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+/* DELETE CONFIRMATION */
+#delete-box {
+  display: none;
+  background-color: #FFF;
+  position: absolute;
+  padding: 20px;
+  border: 3px solid #FFA000;
+  top: 30%;
+  left: 45%;
+  text-align: center;
+  z-index: 100;  
+}
+#delete-box .delete-button {
+  background-color: #E8F4FF;
+  border: 1px solid #3F51B5;
+  margin-top: 10px;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+#delete-box .delete-button:first-of-type{
+  margin-right: 10px;
+}
+#delete-box .delete-button:hover {
+  background-color: #3F51B5;
+  color: #FFF;
+  cursor: pointer;
+}
